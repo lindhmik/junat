@@ -1,0 +1,274 @@
+#welcome{
+    width:50%;
+    min-height: 45%;
+    position:absolute;
+    top:12%;
+    left:50%;
+    margin-left: -25%;
+    font-size: 24px;
+    border: solid 5px white;
+    border-radius:8px;
+    background-color: rgb(0, 0, 65);
+    opacity: 0.8;
+    color:yellowgreen;
+}
+select{
+    display: none;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 1080px) {
+    #welcome{
+        width:90%;
+        height: auto;
+        margin-left: -45%;
+        top:20%;
+        
+    }
+    #pickbutton{
+        display:none;
+    }
+    select{
+        display:block;
+        width: 250px;
+        margin-top:10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        height:35px;
+        border-radius:6px;
+        border: solid yellow;
+        background-color: #342c91;
+        font-size: 14px; 
+        color:white;
+        padding-left:5px; 
+    }
+    option{
+        width:90%;
+    }
+
+    input{
+        display:none;
+    }
+}
+ 
+    
+#footer{
+    width:100%;
+    text-align: center;
+    background-color: rgb(0, 0, 65);
+    color:white;
+    font-size: 24px;
+    position: absolute;
+    bottom:0px;
+    opacity: 0.8;
+}
+.copyrights{
+    color:white;
+    font-size: 18px;
+    position: absolute;
+    bottom:5px;
+    
+}
+.copyrights a{
+    color:red;
+}
+#welcome h1, p{
+    margin-left:15px;
+    
+}
+#welcome h1{
+    color:red;
+    margin-right: 15px;
+}
+
+#timetable{
+    float:left;
+    margin-top:70px;
+    width:100%;
+    height:100%;
+    background-color:rgb(0, 0, 65);
+    background-image:url("tausta.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 100% 100%; 
+   overflow: auto;
+    color:white;
+    opacity:0.8;
+    position: fixed;
+}
+.table{
+    width:100%;
+    
+}
+
+.yellow img{
+    width:36px;
+    margin-left: 50px;
+    margin-top: 5px;
+  
+}
+.table td{
+    min-width:15%;
+    background-color:rgb(0, 0, 65);
+    opacity: 0.7;
+}
+.table tr{
+    text-align: left;
+}
+.tabletitles th{
+    background-color:rgb(0, 0, 65);
+    width:20%;
+    opacity:0.95;
+    padding-left: 10px;
+    color: yellowgreen;
+    border-top: solid 1px yellow;
+    border-bottom: double 1px yellow;
+}
+
+    
+
+.yellow{
+    color:yellow;
+    padding-left: 10px;
+}
+
+.green{
+    color:yellowgreen;
+    padding-left: 10px;
+}
+.red{
+    color:red;
+    padding-left: 10px;
+}
+.center{
+    text-align: center;
+    width:10%;
+}
+
+i {
+    color:red;
+}
+
+#tableheader{
+    width:100%;
+}
+#tableheader th{
+    width:50%;
+    background-color:rgb(0, 0, 65);
+    opacity:0.8;
+}
+#time{
+    text-align: right;
+    padding-right: 30px;
+    color:yellow;
+}
+#tttitle{
+    text-align: left;
+    color:red;
+    padding-left: 10px;  
+}
+#arrival{
+    display:none;
+    overflow: scroll;
+    
+}
+#departure{
+    display:none;
+    overflow: scroll;
+}
+.stationSearch{
+    margin-top:0px;
+    width:100%;
+    background-color:rgb(0, 0, 65);
+    position: fixed;
+    top: 0;
+}
+input{
+    width: 225px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    height:35px;
+    border-radius:6px;
+    border: solid yellow;
+    background-color: #342c91;
+    font-size: 14px; 
+    color:white;
+    padding-left:5px; 
+}
+.buttons{
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 225px; 
+    height:42px;
+    font-size: 18px; 
+    border: solid 4px yellow;
+    border-radius:6px;
+    background-color:rgb(0, 0, 65);
+    color:white;
+    overflow: hidden;
+}
+body{
+    font-size: 40px;
+    font-family: 'Play', sans-serif;
+    margin:0px;
+    background-color:rgb(0, 0, 65);
+    margin: 0;
+}
+
+
+.live {
+    visibility: hidden;
+  
+    width: 400px;
+    max-height: 800px;
+    overflow: auto;
+    font-size: 16px;
+    text-align: left;
+    background-color:rgb(7, 7, 37);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    border-radius: 6px;
+    position: fixed;
+    right:5%;
+    top:2%;
+    border: solid 5px yellowgreen;
+}
+
+.live i{
+    color:greenyellow;
+}
+.live table{
+    margin-left:20px;
+    padding:10px;
+}
+
+.live .center-red{
+    color:red;
+    text-align: center;
+}
+.live .center-yellow{
+    color:yellow;
+    text-align: center;
+}
+.live th{
+    font-size: 18px;
+}
+.live td{
+    width:34%;
+}
+.live h3{
+    margin-left:15px;
+    font-size: 20px;
+}
+.live em{
+    color:red;
+}
+.live .buttons{
+    width:200px;
+    position:relative;
+    left:50%;
+    margin-left:-100px;
+    border: solid 3px red;
+    border-radius:6px;
+    font-size: 20px;
+}

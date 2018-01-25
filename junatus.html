@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="fi">
+<head>
+        <meta charset="UTF-8">
+<title>Junatus</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src= "matskut/junatus.js" ></script>
+<link rel="stylesheet" href="matskut/junatus.css">
+<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+<body>
+
+<div class="stationSearch">
+    <table>
+    <tr><td><input type="text" list="trainStations" id="station" placeholder="Valitse Asema"/>
+        <datalist id="trainStations">
+        </datalist> <select id="mobilebox"></select></td> <td>
+        <button class="buttons" id="pickbutton">HAE TIEDOT</button></td>
+        <td><button class="buttons" id="arrbutton">SAAPUVAT</button></td>
+       <td> <button class="buttons" id="depbutton">LÄHTEVÄT</button>
+        </td></tr></table>
+</div>
+
+<div id="timetable">
+            
+        <div id="welcome"><h1>Henkilöjunaliikenteen aikataulut:</h1><p class="infotext">Tältä sivulta näet kaikki VR:n aikataulut ja voit seurata odottamasi junan etenemistä reaaliajassa.</p><p>
+            Aikataulut päivittyvät ohjelmaan automaattisesti minuutin välein. Junan pysäkkiaikataulun ja etenemän näet klikkaamalla haluamaasi aikatauluriviä.</p>
+            <p class="copyrights">Liikennetietojen lähde: <a href ="http://www.liikennevirasto.fi"> Liikennevirasto</a> / rata.digitraffic.fi, lisenssi CC 4.0 BY</p>
+            </div>
+<table id="tableheader" cellspacing="0" cellpadding="0">
+        <tr><th id="tttitle"></th><th id="time"></th></tr>
+</table>
+<table id ="arrival" class="table" cellspacing="0" cellpadding="0">
+    <thead>
+        
+        <tr class="tabletitles"><th>Saapumisaika</th><th class='center'>Tunnus</th><th>Lähtöasema</th><th class='center'>Raide</th><th></th></tr>
+        <tbody id="arrTimetable">
+            
+        </tbody>
+    </thead>
+</table>
+<table id ="departure" class="table" cellspacing="0" cellpadding="0">
+    <thead>
+        <tr class="tabletitles"><th>Lähtöaika</th><th class='center'>Tunnus</th><th>Määränpää</th><th class='center'>Raide</th><th></th></tr>
+        <tbody id="depTimetable">
+            
+        </tbody>
+    </thead>
+</table>
+<div id='traintracker'></div>
+
+</div> 
+<div id="footer">&copy; Mika Lindh, 2017 || mika.lindh@student.laurea.fi</div><!--timetable-->
+</body>
+</html>
